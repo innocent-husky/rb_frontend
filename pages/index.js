@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import "../public/style/pages/index.css";
 import Author from "../components/Author";
 import Advert from "../components/Advert";
+import Footer from "../components/Footer";
 
 const Home = () => {
     const [mylist, setMylist] = useState(
@@ -28,7 +29,7 @@ const Home = () => {
         ]
     );
     return (
-        <>
+        <div>
             <Head>
                 <title>Home</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -59,8 +60,9 @@ const Home = () => {
                     <Advert/>
                 </Col>
             </Row>
-        </>
-    );
+            <Footer/>
+        </div>
+    )
 };
 
 export default Home;
