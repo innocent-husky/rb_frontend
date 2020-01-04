@@ -1,16 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
-import {Button, Col, Row} from 'antd'
-import Header from "../components/Header";
+import {Row, Col} from 'antd'
+import Header from '../components/Header'
 
-const Home = () => (
+const Detailed = () => (
     <>
         <Head>
-            <title>Home</title>
-            <link rel="icon" href="/favicon.ico"/>
+            <title>Detailed</title>
         </Head>
         <Header/>
-        <div style={{display: "flex", justifyContent: "center", padding: "4px"}}><Button>我是按钮</Button></div>
         <Row className="comm-main" type="flex" justify="center">
             <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
                 左侧
@@ -20,7 +18,8 @@ const Home = () => (
                 右侧
             </Col>
         </Row>
+
     </>
 )
 
-export default Home
+export default Detailed
